@@ -56,7 +56,7 @@ The composer opens with the list already loaded. The **recipient count** badge s
 
 1. Click **Compose Message** at the bottom of the composer. The form opens, and the button changes to **Cancel**, which closes the form and discards what you typed.
 2. Enter a **Subject**.
-3. Write the **Message**. The box starts empty so you can write your own greeting. Two lines down, the closing is already filled in for you: "Sincerely," followed by your name and the church name. Edit or delete it as you like.
+3. Write the **Message**. The box starts empty so you can write your own greeting. Two lines down, the closing is already filled in for you: the **Closing** from **Reports → Admin → Report Settings** ("Sincerely," unless your church changed it), followed by your name and the church name. When that Closing is blank, the pre-filled closing starts with your name. Edit or delete it as you like.
 4. Click **Preview** to see the message exactly as the first recipient will receive it, with the church logo and header. The preview's title names that recipient and how many others will get the message. Click **Back to editing** to return.
 5. Click **Send Email**. When the message has gone, the button reads **Sent** and the form is locked, so the same message cannot be sent twice.
 
@@ -122,6 +122,14 @@ Without the Email permission, the list buttons (**Email All** on the People dash
 ### Email Settings
 
 Administrators set up sending under **Communication → Admin → Email Settings** (`/admin/email`): **Enable Email**, the **SMTP Server** fields (**SMTP Host**, **SMTP Timeout**, **Encryption**, **Auto TLS**) and **SMTP Authentication** (**SMTP Username**, **SMTP Password**). Until email is enabled, the page says **Email is Disabled**. The status reads **SMTP Configured** or **SMTP Not Configured**. Password resets, Member Portal sign-in emails and other system messages use the same setup. See [Email Setup](/administration/email-setup).
+
+### Automatic emails
+
+ChurchCRM also sends email on its own: account emails (new account, password reset, lock and unlock, deletion), birthday greetings, new person and family notifications, family verification links, giving statements, Member Portal sign-in emails, and volunteer emails. They come from the church's name and email address.
+
+- **Subject:** most subjects say only what the email is about, such as "Password Reset" or "2026 Giving Statement", without the church name in front. A family verification email starts with the family's name, and Member Portal sign-in emails still start with the church name.
+- **Closing:** the **Closing** and **Signer** on **Reports → Admin → Report Settings** end these emails, and only the parts you fill in are printed. With both, the Closing and a comma sit above the Signer. With one, only that one is printed. With both blank, the email has no closing. Messages written in the composer don't get this closing; the composer pre-fills its own (see [Writing the message](#writing-the-message)).
+- **Links:** under a button, the email repeats its link for copying and pasting into a browser. A long link wraps onto several lines, so the email still fits a phone screen.
 
 ---
 

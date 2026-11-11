@@ -10,7 +10,7 @@ Volunteer Management v2 sends email at each step — to the volunteer when they 
 
 ## The messages
 
-Every subject is prefixed with the church name. A message about a date names the ministry, team and position (the gap alert lists the positions still short instead), gives the date and time as your church shows it and the location when the linked event has one, and ends with one sentence saying what to do next, with a button.
+Subjects don't start with the church name; the email already comes from the church. A message about a date names the ministry, team and position (the gap alert lists the positions still short instead), gives the date and time as your church shows it and the location when the linked event has one, and ends with one sentence saying what to do next, with a button.
 
 | Message | Who receives it | When |
 |---|---|---|
